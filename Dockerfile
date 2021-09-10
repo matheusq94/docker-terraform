@@ -12,6 +12,6 @@ FROM scratch
 
 COPY --from=builder /app /app
 
-EXPOSE 3000
+EXPOSE 80
 
 CMD ["/app"]
