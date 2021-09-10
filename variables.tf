@@ -2,7 +2,7 @@
 
 variable "aws_region" {
   description = "The AWS region things are created in"
-  default     = "us-east-2"
+  default     = "us-east-1"
 }
 
 variable "ecs_task_execution_role_name" {
@@ -13,11 +13,6 @@ variable "ecs_task_execution_role_name" {
 variable "az_count" {
   description = "Number of AZs to cover in a given region"
   default     = "2"
-}
-
-variable "app_image" {
-  description = "Docker image to run in the ECS cluster"
-  default     = "nginx:latest"
 }
 
 variable "app_port" {
